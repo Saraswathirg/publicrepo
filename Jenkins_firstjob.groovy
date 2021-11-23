@@ -19,7 +19,7 @@ pipeline{
             steps{
                 println "code built"
                 sh "ls -lart ./*"
-                sh "mvn cleanpackage"
+                sh "mvn clean package"
             }
         }
         stage("store to s3"){
