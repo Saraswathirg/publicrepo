@@ -20,7 +20,6 @@ pipeline{
                 println "code built"
                 sh """
                 ls -l
-                cd branchpubrepo
                 mvn clean package
                  """
             }
